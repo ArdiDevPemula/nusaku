@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d47a1">
+  <title>Masuk - NUSAKU</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./auth.css">
+</head>
+<body class="auth-body">
+
+  <header class="auth-topbar">
+    <a href="./index.html" class="logo">NUSA<span>KU</span></a>
+    <a href="./index.html" class="auth-back">← Ke Beranda</a>
+  </header>
+
+  <main class="auth-main">
+
+    <p class="auth-demo-note">Mode prototipe: gunakan data fiktif. Jangan masukkan NIK, KTP, atau kata sandi asli Anda.</p>
+
+    <div class="auth-card">
+      <h1>Masuk ke NUSAKU</h1>
+      <p class="auth-sub">Masuk untuk membuka dashboard Anda.</p>
+
+      <form id="formMasuk">
+        <label for="masukEmail">Email</label>
+        <input type="email" id="masukEmail" placeholder="budi@example.com" autocomplete="off">
+
+        <label for="masukSandi">Kata sandi</label>
+        <input type="password" id="masukSandi" placeholder="Kata sandi contoh" autocomplete="off">
+
+        <p class="auth-message" id="pesanMasuk"></p>
+        <button type="submit" class="auth-submit">Masuk</button>
+      </form>
+
+      <p class="auth-switch">Belum punya akun? <a href="./daftar.html">Daftar</a></p>
+    </div>
+
+  </main>
+
+</body>
+</html>
