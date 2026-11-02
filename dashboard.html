@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d47a1">
+  <title>Dashboard - NUSAKU</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body class="db-body">
+
+  <!-- BAR ATAS -->
+  <header class="db-topbar">
+    <a href="./index.html" class="logo">NUSA<span>KU</span></a>
+    <a href="./index.html" class="db-back">← Ke Beranda</a>
+  </header>
+
+  <main class="db-main">
+
+    <p class="db-demo-note">Mode prototipe: semua data di halaman ini hanyalah data contoh.</p>
+
+    <!-- 1. SALAM -->
+    <section class="db-welcome" id="dbBeranda">
+      <div class="db-avatar">BC</div>
+      <div class="db-welcome-text">
+        <p>Selamat datang,</p>
+        <h1>Budi Contoh</h1>
+      </div>
+    </section>
+
+    <!-- 2. RINGKASAN PENGAJUAN -->
+    <section class="db-section">
+      <h2 class="db-title">Ringkasan Pengajuan</h2>
+      <div class="db-summary">
+        <div class="db-summary-card">
+          <strong id="sumProses">2</strong>
+          <span>Diproses</span>
+        </div>
+        <div class="db-summary-card">
+          <strong id="sumSelesai">5</strong>
+          <span>Selesai</span>
+        </div>
+        <div class="db-summary-card">
+          <strong id="sumTindakan">1</strong>
+          <span>Perlu Tindakan</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PINTASAN LAYANAN POPULER -->
+    <section class="db-section" id="dbLayanan">
+      <h2 class="db-title">Layanan Populer</h2>
+      <div class="db-shortcuts" id="dbShortcuts">
+        <p class="db-empty">Memuat layanan...</p>
+      </div>
+    </section>
+
+    <!-- 4. RIWAYAT AKTIVITAS -->
+    <section class="db-section" id="dbRiwayat">
+      <h2 class="db-title">Riwayat Aktivitas</h2>
+      <div class="db-history" id="dbHistory">
+        <p class="db-empty">Memuat riwayat...</p>
+      </div>
+    </section>
+
+    <!-- 5. PROFIL -->
+    <section class="db-section" id="dbProfil">
+      <h2 class="db-title">Profil Saya</h2>
+      <div class="db-profile-card">
+        <div class="db-profile-row"><span>Nama</span><strong>Budi Contoh</strong></div>
+        <div class="db-profile-row"><span>Email</span><strong>budi.contoh@example.com</strong></div>
+        <div class="db-profile-row"><span>Wilayah</span><strong>Kota Contoh</strong></div>
+        <div class="db-profile-row"><span>Bergabung</span><strong>Januari 2026</strong></div>
+      </div>
+      <p class="db-note">Data contoh. Jangan masukkan data pribadi asli (KTP/NIK) pada tahap prototipe.</p>
+    </section>
+
+  </main>
+
+  <!-- 6. MENU BAWAH (HP) -->
+  <div class="db-bottom-nav" role="navigation" aria-label="Menu dashboard">
+    <a href="#dbBeranda"><span>🏠</span>Beranda</a>
+    <a href="#dbLayanan"><span>🗂️</span>Layanan</a>
+    <a href="#dbRiwayat"><span>🕘</span>Riwayat</a>
+    <a href="#dbProfil"><span>👤</span>Profil</a>
+  </div>
+
+</body>
+</html>
