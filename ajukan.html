@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d47a1">
+  <title>Ajukan Layanan - NUSAKU</title>
+
+  <script>
+    // Penjaga halaman: kalau belum masuk, arahkan ke halaman masuk
+    try {
+      if (!localStorage.getItem("nusaku_sesi")) {
+        window.location.replace("./masuk.html");
+      }
+    } catch (error) {
+      window.location.replace("./masuk.html");
+    }
+  </script>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./auth.css">
+</head>
+<body class="auth-body">
+
+  <header class="auth-topbar">
+    <a href="./index.html" class="logo">NUSA<span>KU</span></a>
+    <a href="./dashboard.html" class="auth-back">← Ke Dashboard</a>
+  </header>
+
+  <main class="auth-main">
+
+    <p class="auth-demo-note">Mode prototipe: ini hanya simulasi. Pengajuan tidak dikirim ke instansi mana pun. Gunakan data fiktif, jangan masukkan NIK atau KTP asli.</p>
+
+    <div class="auth-card">
+      <h1>Ajukan Layanan</h1>
+      <p class="auth-sub">Isi formulir contoh ini untuk mencoba alur pengajuan.</p>
+
+      <form id="formAjukan">
+        <label for="ajukanLayanan">Jenis layanan</label>
+        <select id="ajukanLayanan">
+          <option value="">Pilih layanan...</option>
+          <option value="Kependudukan" data-ikon="🪪">Kependudukan</option>
+          <option value="Kesehatan" data-ikon="🏥">Kesehatan</option>
+          <option value="Pendidikan" data-ikon="🎓">Pendidikan</option>
+          <option value="Bantuan Sosial" data-ikon="🤝">Bantuan Sosial</option>
+          <option value="Pekerjaan" data-ikon="💼">Pekerjaan</option>
+          <option value="Transportasi" data-ikon="🚌">Transportasi</option>
+          <option value="Pemerintahan" data-ikon="🏛️">Pemerintahan</option>
+        </select>
+
+        <label for="ajukanPerihal">Perihal</label>
+        <input type="text" id="ajukanPerihal" placeholder="Contoh: Simulasi pengajuan dokumen" autocomplete="off">
+
+        <label for="ajukanKeterangan">Keterangan (boleh dikosongkan)</label>
+        <textarea id="ajukanKeterangan" rows="4" maxlength="300" placeholder="Tulis keterangan singkat (data fiktif)"></textarea>
+
+        <label class="auth-check">
+          <input type="checkbox" id="ajukanSetuju">
+          <span>Saya mengerti ini simulasi dan tidak memasukkan data pribadi asli.</span>
+        </label>
+
+        <p class="auth-message" id="pesanAjukan"></p>
+        <button type="submit" class="auth-submit">Ajukan</button>
+      </form>
+
+      <p class="auth-switch"><a href="./dashboard.html">Batal, kembali ke Dashboard</a></p>
+    </div>
+
+  </main>
+
+</body>
+</html>
