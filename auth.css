@@ -1,0 +1,167 @@
+/* ===== HALAMAN MASUK & DAFTAR NUSAKU ===== */
+/* Semua nama kelas diawali "auth-" supaya tidak bentrok dengan style.css */
+
+.auth-body {
+  min-height: 100vh;
+}
+
+/* ----- Bar atas ----- */
+.auth-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 5%;
+  background: white;
+  box-shadow: 0 2px 12px #00000010;
+}
+
+.auth-back {
+  color: #1976d2;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-main {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 20px 5% 40px;
+}
+
+.auth-demo-note {
+  background: #e3f2fd;
+  color: #0d47a1;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+/* ----- Kartu formulir ----- */
+.auth-card {
+  background: white;
+  border: 1px solid #e5edfa;
+  border-radius: 18px;
+  padding: 26px 22px;
+  box-shadow: 0 8px 25px #0d47a115;
+}
+
+.auth-card h1 {
+  font-size: 24px;
+  color: #0d47a1;
+  margin-bottom: 6px;
+}
+
+.auth-sub {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #66758b;
+  margin-bottom: 8px;
+}
+
+/* ----- Label dan kolom isian ----- */
+.auth-card label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #172b4d;
+  margin: 16px 0 6px;
+}
+
+.auth-card input[type="text"],
+.auth-card input[type="email"],
+.auth-card input[type="password"] {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #dbe4f0;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #1e293b;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+}
+
+.auth-card input[type="text"]:focus,
+.auth-card input[type="email"]:focus,
+.auth-card input[type="password"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* ----- Kotak centang ----- */
+.auth-card label.auth-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 18px 0 4px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #66758b;
+}
+
+.auth-check input {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  accent-color: #1d4ed8;
+}
+
+/* ----- Pesan kesalahan / berhasil (diisi JavaScript di Tahap 3) ----- */
+.auth-message {
+  margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.auth-message:empty {
+  display: none;
+}
+
+.auth-message-error {
+  background: #fdecea;
+  color: #c62828;
+}
+
+.auth-message-ok {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* ----- Tombol ----- */
+.auth-submit {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #1d4ed8;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.auth-submit:active {
+  background: #1e40af;
+  transform: scale(0.98);
+}
+
+/* ----- Tautan pindah halaman ----- */
+.auth-switch {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #66758b;
+}
+
+.auth-switch a {
+  color: #1976d2;
+  font-weight: 700;
+  text-decoration: none;
+}
