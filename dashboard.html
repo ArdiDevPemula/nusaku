@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0d47a1">
   <title>Dashboard - NUSAKU</title>
+
+  <script>
+    // Penjaga halaman: kalau belum masuk, arahkan ke halaman masuk
+    try {
+      if (!localStorage.getItem("nusaku_sesi")) {
+        window.location.replace("./masuk.html");
+      }
+    } catch (error) {
+      window.location.replace("./masuk.html");
+    }
+  </script>
+
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./dashboard.css">
 </head>
@@ -22,10 +34,10 @@
 
     <!-- 1. SALAM -->
     <section class="db-welcome" id="dbBeranda">
-      <div class="db-avatar">BC</div>
+      <div class="db-avatar" id="dbAvatar">BC</div>
       <div class="db-welcome-text">
         <p>Selamat datang,</p>
-        <h1>Budi Contoh</h1>
+        <h1 id="dbName">Budi Contoh</h1>
       </div>
     </section>
 
@@ -68,12 +80,13 @@
     <section class="db-section" id="dbProfil">
       <h2 class="db-title">Profil Saya</h2>
       <div class="db-profile-card">
-        <div class="db-profile-row"><span>Nama</span><strong>Budi Contoh</strong></div>
-        <div class="db-profile-row"><span>Email</span><strong>budi.contoh@example.com</strong></div>
-        <div class="db-profile-row"><span>Wilayah</span><strong>Kota Contoh</strong></div>
-        <div class="db-profile-row"><span>Bergabung</span><strong>Januari 2026</strong></div>
+        <div class="db-profile-row"><span>Nama</span><strong id="profNama">Budi Contoh</strong></div>
+        <div class="db-profile-row"><span>Email</span><strong id="profEmail">budi.contoh@example.com</strong></div>
+        <div class="db-profile-row"><span>Wilayah</span><strong id="profWilayah">Kota Contoh</strong></div>
+        <div class="db-profile-row"><span>Bergabung</span><strong id="profBergabung">Januari 2026</strong></div>
       </div>
       <p class="db-note">Data contoh. Jangan masukkan data pribadi asli (KTP/NIK) pada tahap prototipe.</p>
+      <button type="button" class="db-logout" id="btnKeluar">Keluar</button>
     </section>
 
   </main>
