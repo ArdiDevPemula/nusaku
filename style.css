@@ -270,67 +270,74 @@ footer small {
   }
 }
 
-/* PERBAIKAN TAMPILAN MOBILE NUSAKU */
+/* ===== KARTU DETAIL LAYANAN ===== */
 
-.search-container {
-  width: 100%;
-  max-width: 600px;
-  margin: 25px auto 20px;
-  padding: 0 15px;
-  box-sizing: border-box;
+#serviceDetail {
+  margin-top: 24px;
+  padding: 0 12px;
+  scroll-margin-top: 90px; /* agar tidak tertutup navbar saat bergulir */
 }
 
-#serviceSearch {
-  width: 100%;
-  padding: 14px 18px;
-  border: 1px solid #dbe4f0;
-  border-radius: 12px;
-  background: #ffffff;
-  color: #1e293b;
-  font-size: 15px;
-  outline: none;
-  box-sizing: border-box;
+.service-detail-card {
+  position: relative;
+  background: white;
+  border: 1px solid #e5edfa;
+  border-radius: 16px;
+  padding: 24px 22px;
+  box-shadow: 0 8px 25px #0d47a115;
 }
 
-#serviceSearch:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+.service-detail-card h2 {
+  font-size: 22px;
+  color: #0d47a1;
+  margin-bottom: 8px;
 }
 
-.service-card button {
-  padding: 10px 16px;
-  border: none;
-  border-radius: 9px;
-  background: #1d4ed8;
-  color: white;
+.service-detail-card > p {
+  color: #66758b;
   font-size: 14px;
+  line-height: 1.7;
+}
+
+.service-detail-card h3 {
+  font-size: 15px;
+  color: #172b4d;
+  margin: 20px 0 8px;
+}
+
+.service-detail-card ul,
+.service-detail-card ol {
+  padding-left: 22px;
+}
+
+.service-detail-card li {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 4px;
+}
+
+.service-detail-card small {
+  display: block;
+  margin-top: 18px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #66758b;
+}
+
+#closeDetail {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #e3f2fd;
+  color: #0d47a1;
+  font-size: 13px;
   font-weight: 600;
   cursor: pointer;
 }
 
-.service-card button:active {
-  background: #1e40af;
-  transform: scale(0.98);
-}
-
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.hero {
-  padding-top: 35px;
-}
-
-@media (max-width: 600px) {
-  .service-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
-    padding: 0 12px;
-  }
-
-  .service-card {
-    min-width: 0;
-  }
+#closeDetail:active {
+  background: #bbdefb;
 }
