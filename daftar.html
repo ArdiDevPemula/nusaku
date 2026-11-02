@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d47a1">
+  <title>Daftar - NUSAKU</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./auth.css">
+</head>
+<body class="auth-body">
+
+  <header class="auth-topbar">
+    <a href="./index.html" class="logo">NUSA<span>KU</span></a>
+    <a href="./index.html" class="auth-back">← Ke Beranda</a>
+  </header>
+
+  <main class="auth-main">
+
+    <p class="auth-demo-note">Mode prototipe: gunakan data fiktif. Jangan masukkan NIK, KTP, atau kata sandi asli Anda.</p>
+
+    <div class="auth-card">
+      <h1>Buat Akun NUSAKU</h1>
+      <p class="auth-sub">Daftar dengan data contoh untuk mencoba dashboard.</p>
+
+      <form id="formDaftar">
+        <label for="daftarNama">Nama (contoh)</label>
+        <input type="text" id="daftarNama" placeholder="Contoh: Budi Contoh" autocomplete="off">
+
+        <label for="daftarEmail">Email (contoh)</label>
+        <input type="email" id="daftarEmail" placeholder="budi@example.com" autocomplete="off">
+
+        <label for="daftarWilayah">Wilayah (boleh dikosongkan)</label>
+        <input type="text" id="daftarWilayah" placeholder="Contoh: Kota Contoh" autocomplete="off">
+
+        <label for="daftarSandi">Kata sandi contoh (minimal 6 karakter)</label>
+        <input type="password" id="daftarSandi" placeholder="Buat kata sandi contoh" autocomplete="new-password">
+
+        <label for="daftarSandi2">Ulangi kata sandi</label>
+        <input type="password" id="daftarSandi2" placeholder="Ulangi kata sandi" autocomplete="new-password">
+
+        <label class="auth-check">
+          <input type="checkbox" id="daftarSetuju">
+          <span>Saya mengerti ini prototipe dan tidak memasukkan data pribadi asli.</span>
+        </label>
+
+        <p class="auth-message" id="pesanDaftar"></p>
+        <button type="submit" class="auth-submit">Daftar</button>
+      </form>
+
+      <p class="auth-switch">Sudah punya akun? <a href="./masuk.html">Masuk</a></p>
+    </div>
+
+  </main>
+
+</body>
+</html>
