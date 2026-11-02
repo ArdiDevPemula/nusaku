@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d47a1">
+  <title>NUSAKU - Layanan Masyarakat</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">NUSA<span>KU</span></a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav id="navMenu">
+      <a href="#beranda">Beranda</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#tentang">Tentang</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-content">
+        <span class="tag">LAYANAN MASYARAKAT INDONESIA</span>
+        <h1>Satu Indonesia,<br><span>Satu Layanan.</span></h1>
+        <p>
+          Akses informasi dan layanan masyarakat
+          dengan lebih mudah melalui NUSAKU.
+        </p>
+        <a href="#layanan" class="primary-btn">Jelajahi Layanan →</a>
+      </div>
+      <div class="hero-icon">🇮🇩</div>
+    </section>
+
+    <section class="services" id="layanan">
+      <div class="section-heading">
+        <span class="tag">NUSAKU SERVICES</span>
+        <h2>Layanan Masyarakat</h2>
+        <p>Temukan layanan sesuai kebutuhanmu.</p>
+      </div>
+
+      <div class="search-container">
+  <input
+    type="search"
+    id="serviceSearch"
+    placeholder="Cari layanan masyarakat..."
+  >
+</div>
+
+<div class="service-grid" id="serviceGrid"></div>
+
+<div id="serviceDetail"></div>
+      
+    </section>
+
+    <section class="about" id="tentang">
+      <span class="tag">TENTANG NUSAKU</span>
+      <h2>Pelayanan publik dalam satu genggaman.</h2>
+      <p>
+        NUSAKU merupakan konsep platform digital
+        yang dirancang untuk mempermudah masyarakat
+        menemukan informasi layanan publik.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#" class="logo">NUSA<span>KU</span></a>
+    <p>© 2026 NUSAKU. Konsep platform layanan masyarakat.</p>
+    <small>Bukan aplikasi resmi pemerintah.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f8ff;
+  color: #172b4d;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 7%;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 12px #00000008;
+}
+
+.logo {
+  color: #0d47a1;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #2196f3;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #172b4d;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #1976d2;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 25px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  color: white;
+  padding: 85px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 390px;
+  gap: 25px;
+}
+
+.hero-content {
+  max-width: 570px;
+}
+
+.tag {
+  color: #64b5f6;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 6vw, 55px);
+  line-height: 1.15;
+  margin: 18px 0;
+}
+
+.hero h1 span {
+  color: #90caf9;
+}
+
+.hero p {
+  line-height: 1.8;
+  color: #e3f2fd;
+  margin-bottom: 30px;
+}
+
+.primary-btn {
+  display: inline-block;
+  background: white;
+  color: #0d47a1;
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 9px;
+  font-weight: bold;
+}
+
+.primary-btn:hover {
+  background: #e3f2fd;
+}
+
+.hero-icon {
+  font-size: 100px;
+  padding: 35px;
+  background: #ffffff18;
+  border-radius: 30px;
+}
+
+.services {
+  padding: 75px 7%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-heading h2,
+.about h2 {
+  font-size: 30px;
+  margin: 12px 0;
+}
+
+.section-heading p,
+.about p {
+  color: #66758b;
+  line-height: 1.8;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.service-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #e5edfa;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px #0d47a115;
+}
+
+.service-icon {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.service-card p {
+  color: #718096;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.about {
+  background: white;
+  padding: 65px 8%;
+  text-align: center;
+}
+
+.about p {
+  max-width: 600px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  background: #0d47a1;
+  color: white;
+}
+
+footer .logo {
+  color: white;
+}
+
+footer .logo span {
+  color: #90caf9;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 12px 0;
+}
+
+footer small {
+  color: #bbdefb;
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .hero {
+    padding: 65px 7%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-icon {
+    align-self: center;
+    font-size: 65px;
+    padding: 20px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .service-card {
+    padding: 17px;
+  }
+
+  .section-heading h2,
+  .about h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 360px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* PERBAIKAN TAMPILAN MOBILE NUSAKU */
+
+.search-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 25px auto 20px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+#serviceSearch {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #dbe4f0;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#serviceSearch:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.service-card button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 9px;
+  background: #1d4ed8;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.service-card button:active {
+  background: #1e40af;
+  transform: scale(0.98);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.hero {
+  padding-top: 35px;
+}
+
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    padding: 0 12px;
+  }
+
+  .service-card {
+    min-width: 0;
+  }
+}
