@@ -1,0 +1,304 @@
+/* ===== DASHBOARD NUSAKU v1 ===== */
+/* Semua nama kelas diawali "db-" supaya tidak bentrok dengan style.css */
+
+.db-body {
+  padding-bottom: 80px; /* ruang agar isi tidak tertutup menu bawah */
+}
+
+/* ----- Bar atas ----- */
+.db-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 5%;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-shadow: 0 2px 12px #00000010;
+}
+
+.db-back {
+  color: #1976d2;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.db-main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 16px 5% 24px;
+}
+
+.db-demo-note {
+  background: #e3f2fd;
+  color: #0d47a1;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+/* ----- Kartu salam ----- */
+.db-welcome {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  color: white;
+  padding: 22px;
+  border-radius: 18px;
+  margin-bottom: 24px;
+  scroll-margin-top: 76px;
+}
+
+.db-avatar {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: white;
+  color: #0d47a1;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.db-welcome-text p {
+  font-size: 13px;
+  color: #bbdefb;
+}
+
+.db-welcome-text h1 {
+  font-size: 22px;
+  margin-top: 2px;
+}
+
+/* ----- Bagian umum ----- */
+.db-section {
+  margin-bottom: 26px;
+  scroll-margin-top: 76px;
+}
+
+.db-title {
+  font-size: 17px;
+  color: #172b4d;
+  margin-bottom: 12px;
+}
+
+.db-empty {
+  background: white;
+  border: 1px dashed #cfd8e8;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #66758b;
+}
+
+.db-note {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #66758b;
+  margin-top: 10px;
+}
+
+/* ----- Ringkasan pengajuan ----- */
+.db-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.db-summary-card {
+  background: white;
+  border: 1px solid #e5edfa;
+  border-radius: 14px;
+  padding: 16px 8px;
+  text-align: center;
+}
+
+.db-summary-card strong {
+  display: block;
+  font-size: 26px;
+  color: #0d47a1;
+  margin-bottom: 4px;
+}
+
+.db-summary-card:nth-child(3) strong {
+  color: #e65100;
+}
+
+.db-summary-card span {
+  font-size: 12px;
+  color: #66758b;
+}
+
+/* ----- Pintasan layanan (diisi JavaScript di Tahap 4) ----- */
+.db-shortcuts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.db-shortcut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 1px solid #e5edfa;
+  border-radius: 14px;
+  padding: 16px 6px;
+  text-align: center;
+  text-decoration: none;
+  color: #172b4d;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.db-shortcut:active {
+  background: #e3f2fd;
+}
+
+.db-shortcut-icon {
+  font-size: 28px;
+}
+
+/* ----- Riwayat aktivitas (diisi JavaScript di Tahap 4) ----- */
+.db-history {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.db-history-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border: 1px solid #e5edfa;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.db-history-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #e3f2fd;
+  font-size: 20px;
+}
+
+.db-history-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.db-history-info strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.db-history-info small {
+  font-size: 12px;
+  color: #66758b;
+}
+
+.db-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.db-badge-proses {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.db-badge-selesai {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.db-badge-tindakan {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+/* ----- Profil ----- */
+.db-profile-card {
+  background: white;
+  border: 1px solid #e5edfa;
+  border-radius: 14px;
+  padding: 4px 16px;
+}
+
+.db-profile-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #eef3fb;
+  font-size: 14px;
+}
+
+.db-profile-row:last-child {
+  border-bottom: none;
+}
+
+.db-profile-row span {
+  color: #66758b;
+}
+
+.db-profile-row strong {
+  text-align: right;
+  word-break: break-word;
+}
+
+/* ----- Menu bawah (HP) ----- */
+.db-bottom-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  display: flex;
+  background: white;
+  border-top: 1px solid #e5edfa;
+  box-shadow: 0 -2px 12px #00000010;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.db-bottom-nav a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 9px 4px;
+  color: #66758b;
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.db-bottom-nav a span {
+  font-size: 20px;
+}
+
+.db-bottom-nav a:active {
+  color: #0d47a1;
+  background: #f5f8ff;
+  }
