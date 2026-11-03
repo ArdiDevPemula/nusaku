@@ -320,3 +320,21 @@
 .db-logout:active {
   background: #ffebee;
 }
+
+/* ----- Tombol Ajukan Layanan ----- */
+.db-cta {
+  display: block;
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #1d4ed8;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.db-cta:active {
+  background: #1e40af;
+}
