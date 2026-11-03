@@ -142,3 +142,53 @@
   font-size: 12px;
   color: #66758b;
 }
+
+/* ----- Titik status berwarna ----- */
+.lk-dot-awal,
+.lk-dot-proses {
+  background: #1d4ed8;
+}
+
+.lk-dot-selesai {
+  background: #2e7d32;
+}
+
+.lk-dot-tindakan {
+  background: #e65100;
+}
+
+/* ----- Simulasi ubah status ----- */
+.lk-sim-note {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #66758b;
+  margin-bottom: 10px;
+}
+
+.lk-sim {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.lk-sim-btn {
+  padding: 9px 14px;
+  border: 1px solid #dbe4f0;
+  border-radius: 10px;
+  background: #f5f8ff;
+  color: #0d47a1;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lk-sim-btn:active {
+  background: #e3f2fd;
+}
+
+.lk-sim-btn:disabled {
+  background: #0d47a1;
+  border-color: #0d47a1;
+  color: white;
+  cursor: default;
+}
