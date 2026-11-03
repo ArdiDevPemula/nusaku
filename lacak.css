@@ -1,0 +1,144 @@
+/* ===== HALAMAN LACAK PENGAJUAN NUSAKU ===== */
+/* Nama kelas diawali "lk-" supaya tidak bentrok dengan file lain */
+
+.lk-title {
+  font-size: 22px;
+  color: #0d47a1;
+  margin-bottom: 6px;
+}
+
+.lk-sub {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #66758b;
+  margin-bottom: 14px;
+}
+
+.lk-search {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #dbe4f0;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #1e293b;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.lk-search:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.lk-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ----- Setiap pengajuan = satu kartu yang bisa dibuka (Tahap 2) ----- */
+.lk-item {
+  background: white;
+  border: 1px solid #e5edfa;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.lk-item summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.lk-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.lk-item[open] summary {
+  border-bottom: 1px solid #eef3fb;
+}
+
+.lk-body {
+  padding: 14px;
+}
+
+.lk-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 0;
+  font-size: 13px;
+}
+
+.lk-row span {
+  color: #66758b;
+}
+
+.lk-row strong {
+  text-align: right;
+  word-break: break-word;
+}
+
+.lk-subtitle {
+  font-size: 14px;
+  color: #172b4d;
+  margin: 16px 0 10px;
+}
+
+/* ----- Perjalanan status ----- */
+.lk-timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.lk-step {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  padding-bottom: 14px;
+}
+
+.lk-step:last-child {
+  padding-bottom: 0;
+}
+
+.lk-step::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  bottom: -2px;
+  width: 2px;
+  background: #dbe4f0;
+}
+
+.lk-step:last-child::before {
+  display: none;
+}
+
+.lk-dot {
+  position: relative;
+  z-index: 1;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  margin-top: 3px;
+  border-radius: 50%;
+  background: #1d4ed8;
+}
+
+.lk-step strong {
+  display: block;
+  font-size: 13px;
+}
+
+.lk-step small {
+  font-size: 12px;
+  color: #66758b;
+}
