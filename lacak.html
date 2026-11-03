@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d47a1">
+  <title>Lacak Pengajuan - NUSAKU</title>
+
+  <script>
+    // Penjaga halaman: kalau belum masuk, arahkan ke halaman masuk
+    try {
+      if (!localStorage.getItem("nusaku_sesi")) {
+        window.location.replace("./masuk.html");
+      }
+    } catch (error) {
+      window.location.replace("./masuk.html");
+    }
+  </script>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./dashboard.css">
+  <link rel="stylesheet" href="./lacak.css">
+</head>
+<body class="db-body">
+
+  <header class="db-topbar">
+    <a href="./index.html" class="logo">NUSA<span>KU</span></a>
+    <a href="./dashboard.html" class="db-back">← Ke Dashboard</a>
+  </header>
+
+  <main class="db-main">
+
+    <p class="db-demo-note">Mode prototipe: status pengajuan di sini hanya simulasi. Tidak ada instansi yang benar-benar memproses pengajuan Anda.</p>
+
+    <section class="db-section">
+      <h1 class="lk-title">Lacak Pengajuan</h1>
+      <p class="lk-sub">Pantau status pengajuan contoh Anda. Cari dengan nomor pengajuan atau perihal.</p>
+      <input type="search" id="lacakCari" class="lk-search" placeholder="Cari nomor atau perihal..." autocomplete="off">
+    </section>
+
+    <section class="db-section">
+      <h2 class="db-title">Pengajuan Saya</h2>
+      <div class="lk-list" id="lacakDaftar">
+        <p class="db-empty">Memuat pengajuan...</p>
+      </div>
+    </section>
+
+    <a href="./ajukan.html" class="db-cta">+ Ajukan Layanan Baru</a>
+
+  </main>
+
+</body>
+</html>
