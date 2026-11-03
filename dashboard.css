@@ -338,3 +338,14 @@
 .db-cta:active {
   background: #1e40af;
 }
+
+/* ----- Tombol Lacak Pengajuan ----- */
+.db-cta-alt {
+  background: white;
+  color: #1d4ed8;
+  border: 1px solid #1d4ed8;
+}
+
+.db-cta-alt:active {
+  background: #e3f2fd;
+}
